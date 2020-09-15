@@ -1,0 +1,157 @@
+{
+  "extends": "tslint:recommended",
+  "ignore": [
+    "node_modules"
+  ],
+  "rules": {
+    "member-access": false,
+    "member-ordering": [
+      true,
+      {
+        "order": [
+          "static-field",
+          "instance-field",
+          "static-method",
+          "instance-method"
+        ]
+      }
+    ],
+    "no-bitwise": false,
+    "whitespace": false,
+    "semicolon": false,
+    "quotemark": [
+      true,
+      "single"
+    ],
+    "no-empty-interface": true,
+    "no-parameter-reassignment": false,
+    "prefer-for-of": false,
+    "await-promise": true,
+    "arrow-parens": false,
+    "curly": true,
+    "forin": false,
+    "no-arg": true,
+    "no-any": false,
+    "no-internal-module": true,
+    "no-conditional-assignment": true,
+    "no-debugger": false,
+    "no-duplicate-super": true,
+    "no-empty": true,
+    "no-eval": true,
+    "no-for-in-array": false,
+    "no-invalid-template-strings": true,
+    "no-invalid-this": false,
+    "no-null-keyword": false,
+    "no-sparse-arrays": true,
+    "no-string-throw": true,
+    "no-switch-case-fall-through": true,
+    "no-unsafe-finally": true,
+    "no-unused-expression": false,
+    "no-use-before-declare": false,
+    "no-var-keyword": true,
+    "no-shadowed-variable": false,
+    "radix": true,
+    "triple-equals": true,
+    "use-isnan": true,
+    "max-classes-per-file": false,
+    "max-file-line-count": [
+      true,
+      2000
+    ],
+    "max-line-length": [
+      true,
+      180
+    ],
+    "no-default-export": false,
+    "no-duplicate-imports": true,
+    "no-console": false,
+    "align": [
+      true,
+      "parameters",
+      "members",
+      "elements"
+    ],
+    "array-type": [
+      true,
+      "array"
+    ],
+    "class-name": true,
+    "comment-format": false,
+    "encoding": true,
+    "import-spacing": true,
+    "ordered-imports": false,
+    "interface-name": false,
+    "jsdoc-format": true,
+    "new-parens": true,
+    "no-consecutive-blank-lines": [
+      true,
+      2
+    ],
+    "object-literal-sort-keys": false,
+    "object-literal-key-quotes": false,
+    "no-trailing-whitespace": false,
+    "no-unnecessary-initializer": true,
+    "space-before-function-paren": false,
+    "variable-name": [
+      true,
+      "check-format",
+      "allow-leading-underscore",
+      "allow-trailing-underscore",
+      "ban-keywords",
+      "allow-pascal-case"
+    ],
+    "ban-types": false,
+    "ban-comma-operator": true,
+    "only-arrow-functions": false,
+    "promise-function-async": false,
+    "object-literal-shorthand": false,
+    "ban": [
+      true,
+      "eval",
+      {
+        "name": "$",
+        "message": "please don't"
+      },
+      [
+        "describe",
+        "only"
+      ],
+      {
+        "name": [
+          "it",
+          "only"
+        ],
+        "message": "don't focus tests"
+      },
+      {
+        "name": [
+          "chai",
+          "assert",
+          "equal"
+        ],
+        "message": "Use 'strictEqual' instead."
+      }
+    ],
+    "import-blacklist": true,
+    "trailing-comma": [
+      false,
+      {
+        "multiline": {
+          "objects": "never",
+          "arrays": "never",
+          "functions": "never",
+          "typeLiterals": "ignore"
+        },
+        "esSpecCompliant": false
+      }
+    ]
+  },
+  "linterOptions": {
+    "exclude": [
+      "node_modules",
+      "src/components/m-industry/**",
+      "src/components/my-city/*.ts",
+      "src/views-admin/admin-report/textTemplate.ts"
+    ]
+  }
+}
